@@ -1,8 +1,12 @@
+import App from "../Layout/App";
+import ErrorPage from "../pages/ErrorPage";
+import Home from "../pages/Home";
+
 const routes = [
 
     {
       path: "/",
-      element:<App />,
+      element:<App/>,
       errorElement:<ErrorPage/>,
       children: [
         { path: "/", element: <Home /> },
